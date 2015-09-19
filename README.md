@@ -6,4 +6,4 @@ Simple Golang app which uses Go's testing library and Ginkgo for test reports an
 This sample is built for Shippable, a docker based continuous integration and deployment platform.
 
 
-test webhooks 3
+test webhooks 4
