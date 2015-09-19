@@ -5,8 +5,9 @@ go:
   - 1.2
 
 env:
-  - CI_REPORT=shippable/testresults/junit.xml
-  - secure: j87sgtjYYeeBF2ZbvDoJAtmhZvm1HYJH2FtbIicX1Lsfy3rR2cEJBSzfdQ/7r3fWHYhgjNNuSMOhnNfQm83ZADoM/aQtKYUT+Wqnc1QXu0TOlgciw3bZmh12SojhzNHuabygwNGOXygJFCri2W+eqf46veA3OzWs7X9pHdwvFevpCrYU0zTnsL9bib594CyfY7bSJ+vgbSQcUdCYyIll3Pc8HhrDXBPTOAy3RmPm814lSiRmTDuyj53CbnCYG+LetlKiPWq8VS3gepVI6wJyizHATwjeFf295jsUDl4htqT3qs/vmY6y6mSPBhPmQkwaj1IK8HU15jrIGEdPGWuPKw==
+  global:
+    - CI_REPORT=shippable/testresults/junit.xml
+    - secure: j87sgtjYYeeBF2ZbvDoJAtmhZvm1HYJH2FtbIicX1Lsfy3rR2cEJBSzfdQ/7r3fWHYhgjNNuSMOhnNfQm83ZADoM/aQtKYUT+Wqnc1QXu0TOlgciw3bZmh12SojhzNHuabygwNGOXygJFCri2W+eqf46veA3OzWs7X9pHdwvFevpCrYU0zTnsL9bib594CyfY7bSJ+vgbSQcUdCYyIll3Pc8HhrDXBPTOAy3RmPm814lSiRmTDuyj53CbnCYG+LetlKiPWq8VS3gepVI6wJyizHATwjeFf295jsUDl4htqT3qs/vmY6y6mSPBhPmQkwaj1IK8HU15jrIGEdPGWuPKw==
 
 before_install:
   - export GOPATH=$SHIPPABLE_GOPATH
