@@ -9,7 +9,7 @@ env:
   
 branches:
   only:
-    - test-branch
+    - master
 
 before_install:
   - export GOPATH=$SHIPPABLE_GOPATH
