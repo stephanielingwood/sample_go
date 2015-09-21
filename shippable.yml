@@ -6,10 +6,6 @@ go:
 
 env:
   - CI_REPORT=shippable/testresults/junit.xml
-  
-branches:
-  only:
-    - master
 
 before_install:
   - export GOPATH=$SHIPPABLE_GOPATH
