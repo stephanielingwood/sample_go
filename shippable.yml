@@ -8,7 +8,7 @@ env:
   - CI_REPORT=shippable/testresults/junit.xml
   
 branches:
-  except:
+  only:
     - test-branch
 
 before_install:
