@@ -29,5 +29,4 @@ script:
   - $GOPATH/bin/gocover-cobertura < coverage.txt > shippable/codecoverage/coverage.xml
   
 notifications:
-  email:
-    on_success: always
+  email: false
