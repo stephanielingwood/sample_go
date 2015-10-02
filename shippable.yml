@@ -30,5 +30,4 @@ script:
 
 notifications:
   email:
-    recipients:
-      - stephanie@shippable.com
+    - stephanie@shippable.com
