@@ -1,8 +1,11 @@
 language: go
 archive: true
 
-go:
-  - 1.2
+matrix:
+  include:
+    - go: 1.2
+  exclude:
+    - go: 1.2
 
 env:
   global:
