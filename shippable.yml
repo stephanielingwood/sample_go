@@ -1,7 +1,7 @@
 language: bestLanguageEva
 archive: true
 
-go:
+bestLanguageEva:
   - 1.2
 
 env:
