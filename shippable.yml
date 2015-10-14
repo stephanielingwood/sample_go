@@ -25,5 +25,6 @@ before_script:
   - mkdir -p shippable/codecoverage
 
 script:
-  - go test -coverprofile=coverage.txt -covermode count ./
-  - $GOPATH/bin/gocover-cobertura < coverage.txt > shippable/codecoverage/coverage.xml
+  - curl https://api.shippable.com
+  # - go test -coverprofile=coverage.txt -covermode count ./
+  # - $GOPATH/bin/gocover-cobertura < coverage.txt > shippable/codecoverage/coverage.xml
