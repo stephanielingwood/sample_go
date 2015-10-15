@@ -3,7 +3,6 @@ archive: true
 
 go:
   - 1.2
-  - 1.4
 
 env:
   global:
