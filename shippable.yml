@@ -7,7 +7,7 @@ go:
 env:
   global:
     - CI_REPORT=shippable/testresults/junit.xml
-    - secure: kSujenF+Puw/fyzjvoxdXatEp1PlaoYOTUqG4RxU5jRo12ZG2ofCBu9R8hS83qy81G6+EoMlVyrzfQlsf+rbMKRhmiXX5P1HxoTgK3E8muKKXKSZeee6bsDJEq91+4ru3b08JbiPuxjWWAzh1BessmHRTjOgyw3UaABXjwQKlYZ58MpdgWphFO3rMkv76xumZ54Usw+RH9eHPJbyQVPof9b7l+otn4R1CYkGogxjjJU3zX67i21iRRa8sQh4Nd7KJYCCSJWZem1hNlW4Ci9kU8rPh6Y866Q+bElYh3mV9zClpQmhEbg1lFFmdyR/ZinsH5YPhHHLj9WL8N7bSqu0bg==
+    - secure: kSujenF+Puw/fyzjvoxdXatEp1PlaoYOTUqG4RxU5jRo12ZG2ofCBu9R8hS83qy81G6+EoMlVyrzfQlsf+rbMKRhmiXX5P1HxoTgK3E8muKKXKSZeee6bsDJEq91+4ru3lYZ58MpdgWphFO3rMkv76xumZ54Usw+RH9eHPJbyQVPof9b7l+otn4R1CYkGogxjjJU3zX67i21iRRa8sQh4Nd7KJYCCSJWZem1hNlW4Ci9kU8rPh6Y866Q+bElYh3mV9zClpQmhEbg1lFFmdyR/ZinsH5YPhHHLj9WL8N7bSqu0bg==
 
 before_install:
   - export GOPATH=$SHIPPABLE_GOPATH
