@@ -1,29 +1,21 @@
 language: go
-archive: true
 
 go:
-  - 1.2
-
-env:
-  global:
-    - CI_REPORT=shippable/testresults/junit.xml
-    - secure: kSujenF+Puw/fyzjvoxdXatEp1PlaoYOTUqG4RxU5jRo12ZG2ofCBu9R8hS83qy81G6+EoMlVyrzfQlsf+rbMKRhmiXX5P1HxoTgK3E8muKKXKSZeee6bsDJEq91+4ru3b08JbiPuxjWWAzh1BessmHRTjOgyw3UaABXjwQKlYZ58MpdgWphFO3rMkv76xumZ54Usw+RH9eHPJbyQVPof9b7l+otn4R1CYkGogxjjJU3zX67i21iRRa8sQh4Nd7KJYCCSJWZem1hNlW4Ci9kU8rPh6Y866Q+bElYh3mV9zClpQmhEbg1lFFmdyR/ZinsH5YPhHHLj9WL8N7bSqu0bg==
+  - 1.5
 
 before_install:
-  - export GOPATH=$SHIPPABLE_GOPATH
+  - export GOPATH=$HOME/workspace
   - source $HOME/.gvm/scripts/gvm
   - gvm install go$SHIPPABLE_GO_VERSION
   - gvm use go$SHIPPABLE_GO_VERSION
-  - go get github.com/t-yuki/gocover-cobertura
-  - go get github.com/onsi/gomega
-  - go get github.com/onsi/ginkgo
-  - go get code.google.com/p/go.tools/cmd/cover
+  - export GOPATH=/root/workspace
 
-# Make folders for the reports
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
 script:
-  - go test -coverprofile=coverage.txt -covermode count ./
-  - $GOPATH/bin/gocover-cobertura < coverage.txt > shippable/codecoverage/coverage.xml
+  - ls -la
+
+after_script:
+  - echo "after script"
