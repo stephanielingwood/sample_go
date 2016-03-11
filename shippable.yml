@@ -21,6 +21,7 @@ before_install:
 
 # Make folders for the reports
 before_script:
+  - echo "before script"a
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
