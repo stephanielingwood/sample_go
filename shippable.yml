@@ -16,7 +16,6 @@ before_script:
 
 script:
   - ls -la
-  - echo "in script"
 
 after_script:
   - echo "after script"
